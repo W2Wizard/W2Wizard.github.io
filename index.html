@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2 Wizard's Website</title>
+    <!-- <link rel="stylesheet" href="./style/main.css" /> -->
+    <script src="https://kit.fontawesome.com/86d317015c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/W2Logo.svg" />
+    <link rel="stylesheet" href="./styles/images.css" />
+    <script src="./dist/app.bundle.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="./assets/W2Logo.svg" class="logo" alt="Logo" />
+            <h1>W2.Wizard</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="about-section">
+            <canvas></canvas>
+            <div class="container">
+                <img src="./assets/W2Logo.svg" class="logo" alt="Logo" style="width:8rem;height: 8rem;" />
+                <span class="name">W2.Wizard</span>
+
+                <span class="description">
+                    I'm a Wizard in all sorts of things!
+                    <br>
+                    Mainly focused on game engines and game development.
+                </span>
+
+                <span id="skills-title" class="skills-title">Skills</span>
+
+                <div class="skills">
+                    <div class="skill-shield" >C++</div>
+                    <div class="skill-shield">C#</div>
+                    <div class="skill-shield">Unreal Engine</div>
+                    <div class="skill-shield">Flax Engine</div>
+                </div>
+
+                <div class="socials">
+                    <a class="hidden-link" href="https://github.com/W2Wizard">
+                        <i class="fab fa-github-square hover-focus github-hover"></i>
+                    </a>
+                    <a class="hidden-link" href="https://twitter.com/w2_wizard">
+                        <i class="fab fa-twitter-square hover-focus twitter-hover"></i>
+                    </a>
+                    <a class="hidden-link" href="https://www.youtube.com/channel/UC2ilFo1F-PeE5XRQ1dLRrUg">
+                        <i class="fab fa-youtube-square hover-focus youtube-hover"></i>
+                    </a>
+                </div>
+
+                <a href="#projects-section" class="hidden-link text-center arrow-animated">
+                    <i id="arrow-animated" class="fas fa-chevron-down hover-focus"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="projects-section">
+
+            <h2>Recent work</h2>
+
+            <div id="projects">
+                <div class="card">
+                    <a class="hidden-link" href="https://github.com/W2Wizard/W2Wizard.github.io/wiki/Volumetric-Galaxy">
+                        <div class="card-image galaxy-project-logo"></div>
+                        <span class="card-title">Volumetric Galaxy</span>
+                        <span class="card-description">
+                            A procedural galaxy which uses volumetric fog particles for nebulae
+                            as well as being able to generate star systems with planets that you can visit.
+
+                            Allows the user to create their very own world and play god!
+                        </span>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a class="hidden-link" href="https://github.com/W2Wizard/W2Wizard.github.io/wiki/Console-Manager">
+                        <div class="card-image console-project-logo"></div>
+                        <span class="card-title">Console Manager</span>
+                        <span class="card-description">
+                            A plugin that lets you add custom console commands and handle their
+                            execution via blueprints, no C++!
+                        </span>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a class="hidden-link" href="https://github.com/W2Wizard/W2Wizard.github.io/wiki/UMG-Colorwheel">
+                        <div class="card-image color-project-logo"></div>
+                        <span class="card-title">UMG Colorwheel</span>
+                        <span class="card-description">
+                            Make your life colorfull! A plugin for Unreal Engine 4 that lets you use a colorwheel and pick a color (duh!)
+                            <br><br>
+                            This was the first plugin/product I released for Unreal Engine.
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="content">
+            <div class="contact">
+                <span class="title">Contact</span>
+
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>E-Mail</td>
+                                <td><a class="hidden-link hover-focus"
+                                        href="mailto:w2.wizzard@gmail.com">w2.wizzard@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Discord</td>
+                                <td class="hover-focus">W2.Wizard#7240</td>
+                            </tr>
+                            <tr>
+                                <td>Epic Games</td>
+                                <td><a class="hidden-link hover-focus"
+                                        href="https://www.unrealengine.com/marketplace/en-US/profile/W2Wizard">W2Wizard</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="credits">
+            <span>Created by <span class="credit-title hover-focus"><a class="hidden-link"
+                        href="https://www.github.com/VNNCC">VNNCC</a></span> © 2021
+                VNC#1607</span>
+        </div>
+    </footer>
+
+    <script src="./dist/main.bundle.js"></script>
+    <script src="./dist/particles.bundle.js"></script>
+</body>
+
+</html>
