@@ -23,6 +23,11 @@
     background-image: url('../assets/PRJ.png');
 }
 
+.codam-logo
+{
+    background-image: url('../assets/CodamLogo.png');
+}
+
 .flax-project-logo
 {
     background-image: url('../assets/flax.png');
